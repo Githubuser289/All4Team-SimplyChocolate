@@ -1,24 +1,3 @@
-<!-- Altele ramase de facut: -->
-<!-- 
--header&Hero--de facut underline pt Home in header + de inlocuit svg-urile inline
-      +de adaugat imaginile pt Retina in SCSS background url  ***bg-img-m. t si d
-  -in sectiunile Subscribe si Footer stilizarea trebuie finalizata + modalul
-      +la footer la social links, acele li-uri nu duc nicaieri, + trebuie integrat un a care sa cuprinda svg-ul
-  -Reviews - stilizarea pt dispozitive e amestecata
-  -daca se poate las un singur fisier "modal.js"
-  -UNIFORMIZARE:
-      la toate insertiile de text orange sa introduc clasa orange-span
-  -verificat si, dupa caz, completat foto pentru Retina!
-        in subscribe.scss este cod pt imagine Retina pe fundal
-  -verificat comportarea elementelor la hover
-  -eliminat elemente de stilizare redundante (de ex., font-family: Montserrat)
-  -de sters toate comentariile inutile din toate fisiereles
-topsellers.scss
-*****nu i-am dat spatiu deasupra si dedesubt in ideea ca ii dai gap de 72 px la asezarea in pagina
-    /* poti pune o variabila daca o mai ai undeva */ ASTA APARE DE MAI MULTE ORI
-
--->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -38,7 +17,7 @@ topsellers.scss
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
-    <!-- librariile pt prefix tara -->
+    <!-- country prefix library -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/css/intlTelInput.css"
@@ -47,9 +26,6 @@ topsellers.scss
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css"
     />
-    <!-- ************************************************ -->
-    <!-- trebuie sa includ in index.js, toate fisierele cu script JS utilizate la sectiunile proiectului -->
-    <!-- apoi sterg liniile in care sunt invocate in folderul partials -->
     <script type="module" src="./index.js"></script>
 
     <title>Simply Chocolate</title>
