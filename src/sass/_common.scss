@@ -25,10 +25,9 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    // primele doua sunt puse de Oxana -- trebuie sa analizez daca nu deranjeaza alte sectiuni si daca sunt neaparat necesare
-    // max-width: 1600px;
-    // margin: auto;
     font-family: "Montserrat", sans-serif;
+    background-color: var(--white2);
+    overflow-x: hidden;
 }
 
 ul {

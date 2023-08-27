@@ -79,7 +79,8 @@
   line-height: normal;
 }
 
-.hero-section .scroll-down {
+.hero-section .scroll-down,
+#scroll {
   display: flex;
   align-items: center;
   gap: 12px;
@@ -88,6 +89,7 @@
   font-weight: 500;
   line-height: 1.16;
   letter-spacing: -0.36px;
+  max-width: 160px;
   padding-left: 20px;
 }
 
@@ -96,6 +98,7 @@
   width: 28px;
   height: 28px;
   flex-shrink: 0;
+  fill: var(--dark-orange);
   background-color: var(--white-color);
   border-radius: 50%;
 }
@@ -122,11 +125,12 @@
 
 #arrow:hover,
 #arrow:focus {
-  color: var(--white-color);
+  // color: var(--white-color);
+  fill: var(--white-color);
   background-color: var(--dark-orange);
   transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-// ???? prima de mai jos mai apare undeva?
+
 .backdrop-hero {
   position: fixed;
   top: 0;
@@ -174,6 +178,11 @@
   height: 100%;
   fill: currentColor;
   stroke: currentColor;
+}
+
+.modal-hero .sortiment-weight picture {
+      width: 100%;
+      text-align: center;
 }
 /* !!!!!!!!!!!!!!  HERO SECTION  TABLET !!!!!!!!!!!!!!  */
 

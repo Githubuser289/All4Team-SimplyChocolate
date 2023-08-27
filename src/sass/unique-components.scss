@@ -1,12 +1,12 @@
-// small mobile screen version
+/* small mobile screen version */
 
 .uniq-comps-box {
   padding-top: 72px;
-  // padding: 4.5rem 1.25rem;
   display: flex;
   flex-direction: column;
   row-gap: 2rem;
   align-items: center;
+  background-color: var(--white2);
 }
 
 .uniq-comps-text {
@@ -15,11 +15,10 @@
   row-gap: 1.5rem;
   align-items: center;
   text-align: center;
-  width: 335px;
 }
 
 .uniq-comps-title {
-  color: var(--almost-black);
+  color: var(--almost-blackr);
   font-size: 1.25rem;
   font-weight: 600;
   line-height: 1.5rem;
@@ -47,7 +46,7 @@
   text-transform: none;
 }
 
-//front cards
+/* front cards */
 
 .ings-list {
   display: flex;
@@ -55,74 +54,78 @@
   row-gap: 1.25rem;
 }
 
-.ing-card-side {
-  padding: 1.75rem;
-  width: 16.9rem;
-  height: 16.9rem;
-  box-sizing: border-box;
-  border-radius: 0.9375rem;
-}
-
 .ing-image {
-  height: 10.715rem;
+  height: 10.6875rem;
 }
 
-.nuts>.ing-image {
-  width: 13.4rem;
+.ing-image.nuts {
+  width: 14rem;
   height: fit-content;
   padding-bottom: 1.9rem;
 }
 
+.ing-front-side {
+  height: 16.875rem;
+  border-radius: 0.9375rem;
+  box-sizing: border-box;
+  border: 1px solid var(--dark-orange);
+  width: 17.5rem;
+}
+
 .ing-text-card.light {
-  color: var(--white-color);
+  color: white;
 }
 
 .ing-text-card.dark {
   color: var(--almost-black);
 }
 
-.front.orange {
+.ing-front-side.orange {
   background-color: var(--dark-orange);
   border: none;
 }
 
-.front.black {
+.ing-front-side.black {
   background-color: var(--dark-grey);
   border: none;
 }
 
-.front {
-  border: 1px solid var(--dark-orange);
+.ing-front-side.white {
+  background-color: var(--white2);
+}
+
+.front-content {
   display: flex;
   flex-direction: column;
   row-gap: 1.56rem;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
-  position: relative;
+  height: 100%;
+  width: 100%;
+  padding: 1.75rem;
+  box-sizing: border-box;
 }
 
-.nuts>.ing-text-card {
-  position: absolute;
-  left: 1.75rem;
-  bottom: 1.75rem;
+/* back cards */
+
+.ing-back-side {
+  background-color: var(--white2);
+  height: 16.875rem;
+  box-sizing: border-box;
+  width: 17.5rem;
 }
 
-// back cards
-
-.ing-card-side.back {
-  padding: 1.25rem;
-}
-
-.back-content-box {
+.back-content {
   display: flex;
   flex-direction: column;
   row-gap: 0.87rem;
   height: 100%;
-  overflow: hidden;
-  background-color: var(--white-color);
+  padding: 1.75rem;
+  box-sizing: border-box;
+  width: 100%;
 }
 
-.ing-name {
+.benefit-name {
   color: var(--almost-black);
   font-size: 1.125rem;
   font-weight: 600;
@@ -134,47 +137,63 @@
   color: var(--almost-black);
   font-weight: 400;
   text-transform: none;
+  height: 9.125rem;
+  overflow: hidden;
 }
 
-.benefit-cards {
+.ing-benefits {
   display: flex;
   column-gap: 0.38rem;
 }
 
-.benefit-titles {
+.highlighted-content {
   display: flex;
   flex-direction: column;
   row-gap: 0.5rem;
 }
 
-.benefit-card {
+.ing-benefit {
   padding: 0.38rem 1rem;
   align-items: center;
   display: flex;
   border-radius: 2.1875rem;
 }
 
-.benefit-card.orange {
+.ing-benefit.orange {
   background-color: var(--dark-orange);
 }
 
-.benefit-card-text {
+.ing-benefit-text {
   font-size: 0.625rem;
   font-weight: 400;
   line-height: 0.75rem;
 }
 
-.benefit-card.orange>.benefit-card-text {
-  color: var(--white-color);
+.ing-benefit.orange>.ing-benefit-text {
+  color: white;
 }
 
-.benefit-card.white {
+.ing-benefit.white {
   background-color: var(--white2);
   border: 1px solid var(--dark-orange);
 }
 
-.benefit-card.white>.benefit-card-text {
+.ing-benefit.white>.ing-benefit-text {
   color: var(--almost-black);
+}
+
+/* mobile version */
+
+@media screen and (min-width: 375px) {
+
+  .ing-front-side,
+  .ing-back-side {
+    width: 20.9375rem;
+  }
+
+  .back-content {
+    width: 20.9375rem;
+  }
 }
 
 /* tablet version */
@@ -189,7 +208,6 @@
 
   .uniq-comps-box {
     padding-top: 100px;
-    // padding: 6.25rem 2rem;
   }
 
   .uniq-comps-text {
@@ -204,62 +222,86 @@
   }
 }
 
-// desktop version
+/* desktop version */
 
 @media screen and (min-width: 1200px) {
   .uniq-comps-box {
-      padding-top: 128px;
-      // padding: 6.25rem 2rem;
-    }
+    padding-top: 128px;
+  }
   .ings-list {
     gap: 1.1rem;
   }
 
-  .ing-card-side {
+  .front-content {
     padding-right: 2.25rem;
   }
 
-  .back-content-box {
-    width: 100%;
-    height: 100%;
+  .ing-image {
+    height: 10rem;
   }
 
-  .nuts>.ing-image {
+  .ing-image.nuts {
     width: 12.875rem;
   }
+
+  .ing-front-side,
+  .ing-back-side {
+    width: 16.875rem;
+  }
+
+  .back-content {
+    width: 16.875rem;
+    padding: 1.25rem;
+  }
 }
 
-// cards animation
+/* cards animation */
 
 .ing-card {
-  perspective: 50rem;
   position: relative;
-  height: 16.9rem;
-  width: 16.9rem;
 }
 
-.ing-card-side {
-  backface-visibility: hidden;
-  transition: transform 0.8s ease-in-out;
-  position: absolute;
+.ing-sides {
   transform-style: preserve-3d;
+  perspective: 63.5rem;
+}
+
+.ing-front-side,
+.ing-back-side {
+  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  backface-visibility: hidden;
+}
+
+.ing-front-side {
+  transform: rotateY(0deg);
+  transform-style: preserve-3d;
+}
+
+.ing-sides:hover .ing-front-side {
+  transform: rotateY(-180deg);
+  transform-style: preserve-3d;
+}
+
+.ing-back-side {
+  position: absolute;
   top: 0;
   left: 0;
-  scale: 0.83;
+  transform: rotateY(-180deg);
+  transform-style: preserve-3d;
 }
 
-.ing-card-side.front {
-  transform: translateZ(8.45rem);
+.ing-sides:hover .ing-back-side {
+  /* transform: rotateY(0deg); */
+  transform-style: preserve-3d;
 }
 
-.ing-card-side.back {
-  transform: rotateY(-180deg) translateZ(8.45rem);
-}
-
-.ing-card:hover .ing-card-side.front {
-  transform: rotateY(180deg) translateZ(8.45rem);
-}
-
-.ing-card:hover .ing-card-side.back {
-  transform: rotateY(0deg) translateZ(8.45rem);
+.front-content,
+.back-content {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  top: 50%;
+  perspective: inherit;
+  /* outline: 1px solid greenyellow; */
+  transform: translateY(-50%) translateZ(3.75rem) scale(0.94);
 }

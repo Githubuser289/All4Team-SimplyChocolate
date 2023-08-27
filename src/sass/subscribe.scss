@@ -16,12 +16,6 @@ a {
     color: currentColor;
 }
 
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
 .bg_sub_img {
     background-image: url(../images/subscribe_mobil.png);
     background-repeat: no-repeat;
@@ -142,6 +136,9 @@ img {
     border-style: none;
     background-color: inherit;
     cursor: pointer;
+}
+.modal-subscribe .close-button:hover svg{
+stroke: var(--dark-orange);
 }
 .modal-header {
     background: url(../images/modal_picture_mobil.png),

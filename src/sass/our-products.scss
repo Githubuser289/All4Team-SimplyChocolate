@@ -20,8 +20,6 @@
     color: var(--almost-black);
     margin: 0;
     max-width: 1136px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .title-our-products span {
@@ -164,7 +162,7 @@
 
     /* Mobil- OUR PRODUCTS */
     .our-products {
-        padding: 72px 20px;
+        padding: 72px 0;
     }
 
     .title-our-products {
@@ -181,11 +179,6 @@
         padding: 32px 52px;
     }
 
-    /* Suprascriu stilurile pentru pozitionarea pe verticala a punctelor de paginatie */
-    // .our-products .swiper-pagination-bullets.swiper-pagination-horizontal{
-        // bottom: 43px;
-        /* modific valoarea bottom predefinită */
-    // }
 }
 
 /* Stilizare pentru tableta */
@@ -193,7 +186,7 @@
 
     /* Tableta - OUR PRODUCTS */
     .our-products {
-        padding: 100px 32px;
+        padding: 100px 0;
     }
 
     .title-our-products {
@@ -208,11 +201,6 @@
         height: 364px;
     }
 
-    /* Suprascriu stilurile pentru pozitionarea pe verticala a punctelor de paginatie */
-    // .our-products .swiper-pagination-bullets.swiper-pagination-horizontal{
-        // bottom: 62px;
-        /* modific valoarea bottom predefinită */
-    // }
 }
 
 /* Stilizare pentru desktop */
@@ -221,7 +209,7 @@
 
     /* Desktop - OUR PRODUCTS */
     .our-products {
-        padding: 128px 32px;
+        padding: 128px 0;
     }
 
     .title-our-products {
@@ -241,9 +229,4 @@
         height: 364px;
     }
 
-    /* Suprascriu stilurile pentru poziionarea pe verticala a punctelor de paginatie */
-    // .our-products .swiper-pagination-bullets.swiper-pagination-horizontal {
-        // bottom: 85px;
-        /* modific valoarea bottom predefinită */
-    // }
 }

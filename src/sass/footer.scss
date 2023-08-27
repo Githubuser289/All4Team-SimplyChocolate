@@ -4,6 +4,8 @@ footer {
 
 .fcontainer.footer_section {
     align-items: flex-start;
+    max-width: 335px;
+    margin: 0 auto;
     padding: 32px 20px;
 }
 
@@ -58,6 +60,7 @@ footer {
 
 .adress_list_item a:hover {
     color: var(--dark-orange);
+    transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .adress_list_item:not(:last-child) {
@@ -76,9 +79,13 @@ footer {
 .footer-socials-item svg {
     width: 22px;
     height: 22px;
-    fill: var(--white-color);
+    color: transparent;
+    stroke: var(--white-color);
 }
-
+.footer-socials-item svg:hover {
+    stroke: var(--dark-orange);
+    transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .line_footer {
     width: 100%;
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -99,10 +106,14 @@ footer {
 
 .nav_footer_item:hover {
     color: var(--dark-orange);
+    transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*tablet*/
 @media screen and (min-width: 768px) {
+    .fcontainer.footer_section {
+        max-width: 704px;
+    }
     .title_footer {
         font-size: 28px;
         line-height: 34px;
@@ -143,8 +154,7 @@ footer {
     }
 
     .fcontainer.footer_section {
-        padding-left: 32px;
-        padding-right: 32px;
+        max-width: 1135px;
     }
     .footer-socials-list {
         flex-direction: row;
