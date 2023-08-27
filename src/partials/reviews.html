@@ -1,0 +1,215 @@
+<section id="chocoisloved" class="reviews-section">
+  <div class="review-div">
+    <h2 class="class-title">
+      <span class="orange-span">CHOCOLATE</span> IS LOVED
+    </h2>
+    <div class="swiper-container swiper2">
+      <div class="reviews-container swiper-wrapper">
+        <div class="reviews-card swiper-slide">
+          <picture>
+            <source
+              srcset="
+                images/reviews-dobrzhanska.jpg    1x,
+                images/reviews-dobrzhanska-2x.jpg 2x
+              "
+            />
+            <img
+              src="./images/reviews-dobrzhanska.jpg"
+              alt="Photo of Victoria Dobrzhanska"
+            />
+          </picture>
+
+          <div>
+            <h3>Victoria Dobrzhanska</h3>
+            <p>
+              I love this chocolate bar. Perfect combination of light crispy
+              wafer, covered in a thin layer chocolate.
+            </p>
+          </div>
+        </div>
+        <div class="reviews-card swiper-slide">
+          <picture>
+            <source
+              srcset="
+                images/reviews-babenko.jpg    1x,
+                images/reviews-babenko-2x.jpg 2x
+              "
+            />
+            <img
+              src="./images/reviews-babenko.jpg"
+              alt="Photo of Nazar Babenko"
+            />
+          </picture>
+
+          <div>
+            <h3>Nazar Babenko</h3>
+            <p>
+              This chocolate confection is a delight! A delight! The wafer is
+              light and crisp, the hazelnut cream is smooth, and the chocolate
+              is good.
+            </p>
+          </div>
+        </div>
+        <div class="reviews-card swiper-slide">
+          <picture>
+            <source
+              srcset="
+                images/reviews-kampusch.jpg    1x,
+                images/reviews-kampusch-2x.jpg 2x
+              "
+            />
+            <img
+              src="./images/reviews-kampusch.jpg"
+              alt="Photo of Olena Kampusch"
+            />
+          </picture>
+
+          <div>
+            <h3>Olena Kampusch</h3>
+            <p>
+              Chocolate is a family favourite treat. Love the delicious smooth
+              chocolate and the creaminess inside. The wafer is soft but
+              crunchy.
+            </p>
+          </div>
+        </div>
+        <div class="reviews-card swiper-slide">
+          <picture>
+            <source
+              srcset="images/reviews-sus.jpg 1x, images/reviews-sus-2x.jpg 2x"
+            />
+            <img src="./images/reviews-sus.jpg" alt="Photo of Natalia Sus" />
+          </picture>
+
+          <div>
+            <h3>Natalia Sus</h3>
+            <p>
+              The chocolate assortment was delicious. Both dark and milk
+              chocolate pieces were smooth and just right on the sweetness
+              level.
+            </p>
+          </div>
+        </div>
+        <div class="reviews-card swiper-slide">
+          <picture>
+            <source
+              srcset="
+                images/reviews-nottingham.jpg    1x,
+                images/reviews-nottingham-2x.jpg 2x
+              "
+            />
+            <img
+              src="./images/reviews-nottingham.jpg"
+              alt="Photo of Danilo Nottingham"
+            />
+          </picture>
+
+          <div>
+            <h3>Danilo Nottingham</h3>
+            <p>
+              This is delicious. It so rich and flavorful you don’t need to use
+              as many. I love topping an apple with almond butter and these
+              chips for a snack.
+            </p>
+          </div>
+        </div>
+        <div class="reviews-card swiper-slide">
+          <picture>
+            <source
+              srcset="
+                images/reviews-tydnyuk.jpg    1x,
+                images/reviews-tydnyuk-2x.jpg 2x
+              "
+            />
+            <img
+              src="./images/reviews-tydnyuk.jpg"
+              alt="Photo of Irina Tydnyuk"
+            />
+          </picture>
+
+          <div>
+            <h3>Irina Tydnyuk</h3>
+            <p>
+              This is simply the best chocolate around, and I'm just thrilled to
+              support a local company! Best local chocolate - world class :)
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <button data-modal-open-review type="button" class="btn-review">
+      Leave a review
+    </button>
+  </div>
+</section>
+<!-- MODAL Leave a review-->
+<div class="modal-review is-hidden-review" data-modal-review>
+  <div class="modal-content">
+    <button class="close-btn" data-modal-close-review>
+      <svg width="14px">
+        <use href="./images/icons.svg#icon-close-x-btn"></use>
+      </svg>
+    </button>
+    <div class="modal-body">
+      <div class="modal-title">
+        LEAVE A REVIEW
+        <br />
+        ABOUT <span>OUR CHOCOLATE</span>
+      </div>
+      <form class="modal-form-review">
+        <label for="" class="form-group">
+          <input
+            type="text"
+            name="username"
+            class="input"
+            placeholder="Name"
+            autofocus
+            autocomplete="off"
+            required
+          />
+        </label>
+
+        <label class="form-group">
+          <input
+            type="email"
+            name="email"
+            class="input white-background"
+            placeholder="E-mail"
+            autocomplete="off"
+            required
+          />
+        </label>
+
+        <label class="form-group input-with-bar">
+          <input
+            type="tel"
+            id="phone"
+            class="input phone-number"
+            placeholder="Phone"
+            autocomplete="off"
+            required
+          />
+          <div class="input-bar"></div>
+        </label>
+
+        <label class="form-group">
+          <textarea
+            name="message"
+            rows="5"
+            placeholder="Enter text"
+            class="input comment-space"
+          ></textarea>
+        </label>
+      </form>
+
+      <div class="end-modal send-btn-ctn">
+        <button class="send-btn send-btn-review" type="submit">Send</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="./js/modal-leave-review.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/js/intlTelInput.js"></script>

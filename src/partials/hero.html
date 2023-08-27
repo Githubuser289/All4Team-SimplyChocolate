@@ -1,0 +1,140 @@
+<div class="hero-container">
+  <section class="hero-section">
+    <h1 class="hero-text">
+      Treat yourself or a loved one to our finest ingredients for a moment of
+      pure delight!
+    </h1>
+    <div class="buttons-container">
+      <div class="hero-buttons">
+        <button
+          class="button"
+          type="button"
+          data-modal-open-hero="#modal-hero"
+          id="buy-btn"
+        >
+          Buy now
+        </button>
+        <a href="#howitsmade" class="how-is-made-btn" id="how-btn"
+          >How it’s made</a
+        >
+      </div>
+      <a href="#bottom" class="scroll-down" id="scroll">
+        scroll down
+
+        <svg id="arrow">
+          <use href="images/icons.svg#icon-scroll-down"></use>
+        </svg>
+      </a>
+    </div>
+    <div class="backdrop-hero is-hidden-hero" data-modal-hero>
+      <div class="modal-hero">
+        <button data-modal-close-hero type="button" class="close-button">
+          <svg>
+            <use href="./images/icons.svg#icon-close-button"></use>
+          </svg>
+        </button>
+        <form class="modal-form">
+          <p><span>bUY</span>&nbsp;nOW</p>
+          <div class="form-field">
+            <div class="sortiment-weight">
+              <picture
+                ><source
+                  media="min-width:375px"
+                  srcset="
+                    ./images/first_sortiment.png,
+                    ./images/first_sortiment_2x.png
+                  " />
+                <img src="./images/first_sortiment.png" alt="first sortiment"
+              /></picture>
+              <button>100 g</button>
+            </div>
+            <div class="sortiment-weight">
+              <picture
+                ><source
+                  media="min-width:375px"
+                  srcset="
+                    ./images/second_sortiment.png,
+                    ./images/second_sortiment_2x.png
+                  " />
+                <img src="./images/second_sortiment.png" alt="first sortiment"
+              /></picture>
+              <button>200 g</button>
+            </div>
+            <div class="sortiment-weight">
+              <picture
+                ><source
+                  media="min-width:375px"
+                  srcset="
+                    ./images/third_sortiment.png,
+                    ./images/third_sortiment_2x.png
+                  " />
+                <img src="./images/third_sortiment.png" alt="first sortiment"
+              /></picture>
+              <button>300 g</button>
+            </div>
+          </div>
+          <div class="form-data-section">
+            <div class="form-field">
+              <label class="form-label">Personal information</label>
+              <div class="personal-info-input">
+                <input type="text" name="user_name" placeholder="Name" />
+                <input type="text" name="user_surname" placeholder="Surname" />
+              </div>
+            </div>
+            <div class="form-field">
+              <label class="form-label">Email</label>
+              <input
+                type="email"
+                name="E-mail"
+                placeholder="Enter your email"
+              />
+            </div>
+            <div class="form-field">
+              <label class="form-label">Phone number</label>
+              <div class="form-card">
+                <input type="tel" name="phone" placeholder="Phone number" />
+                <div class="country-code">
+                  <svg class="country-flag">
+                    <use href="./images/icons.svg#icon-country-flag"></use>
+                  </svg>
+                  <span>+380</span>
+                </div>
+              </div>
+            </div>
+            <div class="form-field">
+              <label class="form-label">Card number</label>
+              <div class="form-card">
+                <input
+                  type="number"
+                  name="Card number"
+                  placeholder="Enter card"
+                />
+                <svg class="card-format">
+                  <use href="./images/icons.svg#icon-mastercard"></use>
+                </svg>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label class="form-label">Comments</label>
+              <textarea
+                type="text"
+                name="user_message"
+                placeholder="Enter text"
+              ></textarea>
+            </div>
+            <button class="button submit-button" type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+</div>
+<script
+  defer
+  src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+  integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+  crossorigin="anonymous"
+></script>
+<script defer src="js/mobile-menu.js"></script>
+<script src="./js/modal-hero.js"></script>

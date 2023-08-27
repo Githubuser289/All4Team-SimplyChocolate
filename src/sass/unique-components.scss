@@ -1,0 +1,265 @@
+// small mobile screen version
+
+.uniq-comps-box {
+  padding-top: 72px;
+  // padding: 4.5rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  align-items: center;
+}
+
+.uniq-comps-text {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+  align-items: center;
+  text-align: center;
+  width: 335px;
+}
+
+.uniq-comps-title {
+  color: var(--almost-black);
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  letter-spacing: -0.0375rem;
+  text-transform: uppercase;
+  padding: 0 1.62rem;
+}
+
+.uniq-comps-title>.orange {
+  color: var(--dark-orange);
+}
+
+.ing-text-card {
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.125rem;
+  letter-spacing: -0.0175rem;
+  text-transform: uppercase;
+  align-self: self-start;
+}
+
+.uniq-comps-desc {
+  color: var(--almost-black);
+  font-weight: 400;
+  text-transform: none;
+}
+
+//front cards
+
+.ings-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.25rem;
+}
+
+.ing-card-side {
+  padding: 1.75rem;
+  width: 16.9rem;
+  height: 16.9rem;
+  box-sizing: border-box;
+  border-radius: 0.9375rem;
+}
+
+.ing-image {
+  height: 10.715rem;
+}
+
+.nuts>.ing-image {
+  width: 13.4rem;
+  height: fit-content;
+  padding-bottom: 1.9rem;
+}
+
+.ing-text-card.light {
+  color: var(--white-color);
+}
+
+.ing-text-card.dark {
+  color: var(--almost-black);
+}
+
+.front.orange {
+  background-color: var(--dark-orange);
+  border: none;
+}
+
+.front.black {
+  background-color: var(--dark-grey);
+  border: none;
+}
+
+.front {
+  border: 1px solid var(--dark-orange);
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.56rem;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.nuts>.ing-text-card {
+  position: absolute;
+  left: 1.75rem;
+  bottom: 1.75rem;
+}
+
+// back cards
+
+.ing-card-side.back {
+  padding: 1.25rem;
+}
+
+.back-content-box {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.87rem;
+  height: 100%;
+  overflow: hidden;
+  background-color: var(--white-color);
+}
+
+.ing-name {
+  color: var(--almost-black);
+  font-size: 1.125rem;
+  font-weight: 600;
+  letter-spacing: -0.03375rem;
+  text-transform: uppercase;
+}
+
+.benefit-desc {
+  color: var(--almost-black);
+  font-weight: 400;
+  text-transform: none;
+}
+
+.benefit-cards {
+  display: flex;
+  column-gap: 0.38rem;
+}
+
+.benefit-titles {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+
+.benefit-card {
+  padding: 0.38rem 1rem;
+  align-items: center;
+  display: flex;
+  border-radius: 2.1875rem;
+}
+
+.benefit-card.orange {
+  background-color: var(--dark-orange);
+}
+
+.benefit-card-text {
+  font-size: 0.625rem;
+  font-weight: 400;
+  line-height: 0.75rem;
+}
+
+.benefit-card.orange>.benefit-card-text {
+  color: var(--white-color);
+}
+
+.benefit-card.white {
+  background-color: var(--white2);
+  border: 1px solid var(--dark-orange);
+}
+
+.benefit-card.white>.benefit-card-text {
+  color: var(--almost-black);
+}
+
+/* tablet version */
+
+@media screen and (min-width: 768px) {
+  .ings-list {
+    flex-direction: row;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .uniq-comps-box {
+    padding-top: 100px;
+    // padding: 6.25rem 2rem;
+  }
+
+  .uniq-comps-text {
+    width: 30.375rem;
+  }
+
+  .uniq-comps-title {
+    padding: 0 2.35rem;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    letter-spacing: -0.045rem;
+  }
+}
+
+// desktop version
+
+@media screen and (min-width: 1200px) {
+  .uniq-comps-box {
+      padding-top: 128px;
+      // padding: 6.25rem 2rem;
+    }
+  .ings-list {
+    gap: 1.1rem;
+  }
+
+  .ing-card-side {
+    padding-right: 2.25rem;
+  }
+
+  .back-content-box {
+    width: 100%;
+    height: 100%;
+  }
+
+  .nuts>.ing-image {
+    width: 12.875rem;
+  }
+}
+
+// cards animation
+
+.ing-card {
+  perspective: 50rem;
+  position: relative;
+  height: 16.9rem;
+  width: 16.9rem;
+}
+
+.ing-card-side {
+  backface-visibility: hidden;
+  transition: transform 0.8s ease-in-out;
+  position: absolute;
+  transform-style: preserve-3d;
+  top: 0;
+  left: 0;
+  scale: 0.83;
+}
+
+.ing-card-side.front {
+  transform: translateZ(8.45rem);
+}
+
+.ing-card-side.back {
+  transform: rotateY(-180deg) translateZ(8.45rem);
+}
+
+.ing-card:hover .ing-card-side.front {
+  transform: rotateY(180deg) translateZ(8.45rem);
+}
+
+.ing-card:hover .ing-card-side.back {
+  transform: rotateY(0deg) translateZ(8.45rem);
+}
