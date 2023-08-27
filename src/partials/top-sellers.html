@@ -4,14 +4,14 @@
     <div class="top-sellers-card">
       <picture
         ><source
-          media="min-width:375px"
-          srcset="images/tops_img_1_m.png, images/tops_img_1_m_2x.png" />
+          media="(min-width:375px)"
+          srcset="images/tops_img_1_m.png 1x, images/tops_img_1_m_2x.png 2x" />
         <source
-          media="min-width:768px"
-          srcset="images/tops_img_1_t.png, images/tops_img_1_t_2x.png" />
+          media="(min-width:768px)"
+          srcset="images/tops_img_1_t.png 1x, images/tops_img_1_t_2x.png 2x" />
         <source
-          media="min-width:1200px"
-          srcset="images/tops_img_1_d.png, images/tops_img_1_d_2x.png" />
+          media="(min-width:1200px)"
+          srcset="images/tops_img_1_d.png 1x, images/tops_img_1_d_2x.png 2x" />
         <img src="./images/tops_img_1_m.png" alt="top sellers description 1"
       /></picture>
       <p>
@@ -23,22 +23,22 @@
     <div class="top-sellers-card">
       <picture>
         <source
-          media="min-width:1200px"
-          srcset="images/tops_img_3_d.png, images/tops_img_3_d_2x.png" />
+          media="(min-width:1200px)"
+          srcset="images/tops_img_3_d.png 1x, images/tops_img_3_d_2x.png 2x" />
         <img src="./images/tops_img_3_d.png" alt="top sellers description 2"
       /></picture>
     </div>
     <div class="top-sellers-card">
       <picture
         ><source
-          media="min-width:375px"
-          srcset="images/tops_img_2_m.png, images/tops_img_2_m_2x.png" />
+          media="(min-width:375px)"
+          srcset="images/tops_img_2_m.png 1x, images/tops_img_2_m_2x.png 2x" />
         <source
-          media="min-width:768px"
-          srcset="images/tops_img_2_t.png, images/tops_img_2_t_2x.png" />
+          media="(min-width:768px)"
+          srcset="images/tops_img_2_t.png 1x, images/tops_img_2_t_2x.png 2x" />
         <source
-          media="min-width:1200px"
-          srcset="images/tops_img_2_d.png, images/tops_img_2_d_2x.png" />
+          media="(min-width:1200px)"
+          srcset="images/tops_img_2_d.png 1x, images/tops_img_2_d_2x.png 2x" />
         <img src="./images/tops_img_2_m.png" alt="top sellers description 2"
       /></picture>
       <button class="button" type="button" data-modal-open="#modal">
@@ -59,10 +59,10 @@
           <div class="sortiment-weight">
             <picture
               ><source
-                media="min-width:375px"
+                media="(min-width:375px)"
                 srcset="
-                  ./images/first_sortiment.png,
-                  ./images/first_sortiment_2x.png
+                  ./images/first_sortiment.png    1x,
+                  ./images/first_sortiment_2x.png 2x
                 " />
               <img src="./images/first_sortiment.png" alt="first sortiment"
             /></picture>
@@ -71,10 +71,10 @@
           <div class="sortiment-weight">
             <picture
               ><source
-                media="min-width:375px"
+                media="(min-width:375px)"
                 srcset="
-                  ./images/second_sortiment.png,
-                  ./images/second_sortiment_2x.png
+                  ./images/second_sortiment.png    1x,
+                  ./images/second_sortiment_2x.png 2x
                 " />
               <img src="./images/second_sortiment.png" alt="first sortiment"
             /></picture>
@@ -83,10 +83,10 @@
           <div class="sortiment-weight">
             <picture
               ><source
-                media="min-width:375px"
+                media="(min-width:375px)"
                 srcset="
-                  ./images/third_sortiment.png,
-                  ./images/third_sortiment_2x.png
+                  ./images/third_sortiment.png    1x,
+                  ./images/third_sortiment_2x.png 2x
                 " />
               <img src="./images/third_sortiment.png" alt="first sortiment"
             /></picture>
@@ -133,11 +133,7 @@
 
           <div class="form-field">
             <label class="form-label">Comments</label>
-            <textarea
-              type="text"
-              name="user_message"
-              placeholder="Enter text"
-            ></textarea>
+            <textarea name="user_message" placeholder="Enter text"></textarea>
           </div>
           <button class="button submit-button" type="submit">Submit</button>
         </div>

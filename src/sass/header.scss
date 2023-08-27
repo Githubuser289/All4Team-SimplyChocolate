@@ -45,7 +45,7 @@
   height: 100vh;
   width: 220px;
   background-color: var(--dark-grey);
-  z-index: 1;
+  z-index: 45;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
 }
@@ -245,14 +245,24 @@
     stroke: var(--almost-black);
   }
 
-  #nav-hover:hover,
-  #nav-hover:focus {
+  .nav-pages .nav-group-link:hover,
+  .nav-pages .nav-group-link:focus {
     color: var(--dark-orange);
     transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+  #lnk1:hover, #lnk1:focus,
+  #lnk2:hover, #lnk2:focus, 
+  #lnk3:hover, #lnk3:focus,
+  #lnk4:hover, #lnk4:focus,
+  #lnk5:hover, #lnk5:focus{
+    color: var(--dark-orange);
+    transition: var(--transition);
+  }
 
-  #svg-hover:hover,
-  #svg-hover:focus {
+
+  #svg-hover1:hover, #svg-hover1:focus,
+  #svg-hover2:hover, #svg-hover2:focus
+  {
     stroke: var(--dark-orange);
     transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
   }
