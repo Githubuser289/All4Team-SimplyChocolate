@@ -82,8 +82,10 @@
 }
 .top-sellers-section .button:hover,
 .submit-button:hover {
-    background: var(--light-orange);
+    background-color: var(--light-orange);
     color: var(--dark-orange);
+    transition: background-color var(--transition),
+            color var(--transition);
 }
 .backdrop {
     position: fixed;

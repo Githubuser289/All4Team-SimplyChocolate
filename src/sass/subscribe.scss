@@ -89,8 +89,10 @@ a {
 }
 
 .subscribe_button:hover {
-    background: var(--light-orange);
+    background-color: var(--light-orange);
     color: var(--dark-orange);
+    transition: background-color var(--transition),
+            color var(--transition);
     cursor: pointer;
 }
 
@@ -138,7 +140,8 @@ a {
     cursor: pointer;
 }
 .modal-subscribe .close-button:hover svg{
-stroke: var(--dark-orange);
+    stroke: var(--dark-orange);
+    transition: stroke var(--transition);
 }
 .modal-header {
     background: url(../images/modal_picture_mobil.png),
